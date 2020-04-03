@@ -25,3 +25,9 @@ function myFunction(x) {
 function text_alert(){
     alert("I am an alert box!");
 }
+
+function scroll_sec1() {
+    var el = document.getElementById("sec1");
+    el.scrollIntoView({behavior: "smooth"});
+    // window.scrollTo(0,document.getElementById("sec1"));
+}

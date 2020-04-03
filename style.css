@@ -21,8 +21,9 @@ h1 {
   left: 27%; */
   /* left: 20vw; */
   text-align: center;
+  text-shadow: -1px -1px 5px rgba(255,255,255, 0.9), 1px 1px 5px rgba(255, 255, 255, 0.9);
   color: black;
-  padding-top: 150px;
+  padding-top: 210px;
 
 }
 
@@ -84,10 +85,14 @@ h1 {
 .logo-big {
   display: inline-block;
   position: absolute;
-  /* left: 27vw;
-  top: -4vh; */
-  padding-top: 230px;
-  transform:translate(-50%, -50%) scale(0.5);
+  /* left: 27vw; */
+  top: 160px;
+  /* top: 16%; */
+  /* padding-top: 230px; */
+  /* padding-top: 55%; */
+  transform:translate(-50%, -50%) scale(0.5); /*зробити динамічний скейл лого з незмінною позицією*/
+  /* width: auto; */
+  /* height: 50%; */
 }
 
 /* .dropdown {
@@ -216,6 +221,10 @@ footer {
     width: 25%;
     padding-top: 200px;
 }
+.t-p {
+  padding-right: 200px;
+  
+}
 .col_m {
     display: inline-block;
     font-weight: bold;
@@ -231,6 +240,19 @@ footer {
     /* margin-right: 250px; */
     width: 25%;
     padding-top: 200px;
+}
+.t-f {
+  /* color: black; */
+  /* background-color: rgba(184, 184, 184, 0.39); */
+  text-shadow: -1px -1px 2px rgba(255,255,255, 0.9), 1px 1px 2px rgba(255, 255, 255, 0.9);
+  color: black;
+  
+  font-weight: 500;
+  font-size: 2vw;
+  width: 35%;
+  padding-top: 0;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .btnUp {
@@ -262,10 +284,49 @@ footer {
   }
 
 .btn-arrow {
-  filter: drop-shadow(1px 1px 0.5px white);
+  filter: drop-shadow(1px 1px 1.5px white);
   width: 48px;
   height: auto;
+
 }
+
+
+.btnNext {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.433);
+  border-radius: 50%;
+  height: 50px;
+  width: auto;
+  text-shadow: -1px -1px 2px rgba(255,255,255, 0.9), 1px 1px 2px rgba(255, 255, 255, 0.9);
+  color: black;
+  background: rgb(255,255,255);
+  /* background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);  */
+  background: linear-gradient(90deg, black, white);
+  /* background-size: 400% 400%; */
+  animation: btnNextAnim 5s linear infinite; /*do animation*/
+}
+/* @keyframes btnNextAnim {
+  0%{transform: rotate(0deg)}
+  make circling animation for the button
+  100%{transform: rotate(360deg)}
+} */
+/* @keyframes btnNextAnim {
+  0%{background-position:100% 100%}
+  16.6%{background-position:100% 51%}
+  33.2%{background-position: 0% 51%}
+  49.8%{background-image: 0% 0%}
+  66.4%{background-position:51% 0%}
+  83%{background-position:51% 100%}
+  100%{background-position:100% 100%}
+} */
+/* @keyframes btnNextAnim {
+  0%{background-position:75% 75%}
+  /* 12.5%{background-position:100% 0%} *
+  25%{background-position:87.5% 12.5%}
+  50%{background-position:25% 25%}
+  75%{background-position:25% 75%}
+  100%{background-position:75% 75%}
+} */
 
 video{
   width: 100.001%;
@@ -280,7 +341,7 @@ video{
   top: 50%;
   /* transform: translate(-49.56vw, -30.1vw); */
   transform: translate(-50%, -50%);
-  filter: contrast(100%) brightness(130%) grayscale(50%);
+  filter: contrast(100%) brightness(80%) grayscale(50%);
 }
 
 
