@@ -15,9 +15,9 @@
 
     <header>
         <nav class="topnavbar">
+            <a href="#footer">Контакти</a> 
+            <a href="#sec2">Про нас</a>
             <a class="active" href="#home">Головна</a>
-            <a href="#sec3">Про нас</a>
-            <a href="#sec2">Контакти</a>
            <!-- <ul class="unlist">
               <li><a class="active" href="#home">Головна</a></li>
               <li><a href="#sec3">Про нас</a> </li>
@@ -43,12 +43,13 @@
         <img class="logo-big" src="Gallery/logo.png" alt="Logo">
         <h1>Winter Wonderland</h1>
         <video loop muted autoplay>
-            <source src="Gallery/Mountain Loop HD.mp4" type="video/mp4" poster="Gallery/57-572052_2560x1440-nature-snowy-mountains-wallpaper-data-snowy-mountain.jpg">
+            <source src="Gallery/Mountain Loop HD.mp4" type="video/mp4" poster="Gallery/57-572052_2560x1440-nature-snowy-mountains-wallpaper-data-snowy-mountain.jpg">  <!-- добавити постер першого кадру відоса -->
             Your browser does not support this video.
         </video>
         <p class="container col_l t-f"> Your last resort will be the last memory to stick in your brain!</p>
+         <button class="btnNext" onclick="scroll_sec1()">&#9661;</button>         <!--   &#9586;&#9585;     -->
         <p class="container col_r t-f">Our resort will definitely be carved in there for good!</p>
-        <button class="btnNext" onclick="scroll_sec1()">Down</button>
+        
     </section>
     <!-- <div class="titletxt">
         <video loop muted autoplay>
@@ -58,8 +59,9 @@
         
     </div> -->
 		<div id="sec1" class="sec-text">
-			<h3 class="sec-text__title">Basic CSS Parallax Scrolling Effects</h3>
-			<p class="sec-text__dsc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+			<h3 class="sec-text__title">Where to look for the best ski resort?</h3>
+			<p class="sec-text__dsc">Ski resorts are located on both northern and southern hemispheres on all continents except Antarctica. They typically are located on mountains, as they require a large slope. They also need to receive at least 50 cm (20 in) of snow (unless the resort uses dry ski slopes).
+High concentrations of ski resorts are located in the Alps, western and eastern North America, and Japan. There are also ski resorts in the Andes, scattered across central Asia, and in Australia and New Zealand. </p>
 		</div>
 
 <section class="sec2"></section>
@@ -85,7 +87,7 @@
 
 
 
-        <footer class="container rows">
+        <footer id="footer" class="container rows">
             <div class="col_l">
                 Left side of the mountain
             </div>

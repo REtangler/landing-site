@@ -65,10 +65,11 @@ h1 {
 
 .topnavbar a {
     float: right;
-    font-size: 16px;
-    color: rgb(207, 194, 255);
+    font-size: 22px;
+    text-shadow: -1px -1px 0px rgba(255,255,255, 0.9), 1px 1px 0px rgba(255, 255, 255, 0.9), -1px 1px 0px rgba(255, 255, 255, 0.9), 1px -1px 0px rgba(255, 255, 255, 0.9);
+    color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 8px 16px;
     text-decoration: none;
 
 }
@@ -149,15 +150,14 @@ body {margin: 0;padding: 0;font-family: sans-serif;color: rgb(216, 216, 216);}
 
 section {
   width: 100%;
-  height: 100vh;
+  height: 72vh;           /* коли подобавляю текст пофіксити висоти секцій !!!!*/
   box-sizing: border-box;
 }
 section.sec1 {
-  
   /* background: url(Gallery/57-572052_2560x1440-nature-snowy-mountains-wallpaper-data-snowy-mountain.jpg) no-repeat center / cover; */
   text-align: center;
   background-attachment: fixed;
-  /* height: 110vh; */
+  height: 92.3vh;
   margin-top: -46px;
 } 
 section.sec2 {
@@ -175,12 +175,7 @@ section.sec4 {
 .sec-text {
   padding: 4% 8%;
   height: auto;
-  /* background: linear-gradient(42deg, #000000, rgb(88, 88, 88)); */
-  background: rgba(29, 29, 29, 0.445);
-  background-size: 400% 400%;
-  -webkit-animation: navbaranim 5s ease infinite;
-  -moz-animation: navbaranim 5s ease infinite;
-  animation: navbaranim 10s ease infinite;
+  background:rgba(29, 29, 29, 0.808);
 }
 .sec-text__title {
   margin: 0;
@@ -220,10 +215,6 @@ footer {
     /* margin-right: 50vw; */
     width: 25%;
     padding-top: 200px;
-}
-.t-p {
-  padding-right: 200px;
-  
 }
 .col_m {
     display: inline-block;
@@ -290,43 +281,43 @@ footer {
 
 }
 
-
 .btnNext {
-  border: none;
-  background-color: rgba(0, 0, 0, 0.433);
+  position: relative;
+  top: 40%;
+  font-size: 50px;
+  border: 2px solid rgb(0, 0, 0);
+  text-align: center;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  height: 50px;
+  height: 67px;
   width: auto;
-  text-shadow: -1px -1px 2px rgba(255,255,255, 0.9), 1px 1px 2px rgba(255, 255, 255, 0.9);
+  transition: 0.8s;
+  overflow: hidden;
   color: black;
-  background: rgb(255,255,255);
-  /* background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);  */
-  background: linear-gradient(90deg, black, white);
-  /* background-size: 400% 400%; */
-  animation: btnNextAnim 5s linear infinite; /*do animation*/
+  text-shadow: -1px -1px 2px rgba(255,255,255, 0.9), 1px 1px 2px rgba(255, 255, 255, 0.9);
 }
-/* @keyframes btnNextAnim {
-  0%{transform: rotate(0deg)}
-  make circling animation for the button
-  100%{transform: rotate(360deg)}
-} */
-/* @keyframes btnNextAnim {
-  0%{background-position:100% 100%}
-  16.6%{background-position:100% 51%}
-  33.2%{background-position: 0% 51%}
-  49.8%{background-image: 0% 0%}
-  66.4%{background-position:51% 0%}
-  83%{background-position:51% 100%}
-  100%{background-position:100% 100%}
-} */
-/* @keyframes btnNextAnim {
-  0%{background-position:75% 75%}
-  /* 12.5%{background-position:100% 0%} *
-  25%{background-position:87.5% 12.5%}
-  50%{background-position:25% 25%}
-  75%{background-position:25% 75%}
-  100%{background-position:75% 75%}
-} */
+.btnNext:hover {
+  color:white;
+  border: 2px solid white;
+  background: none;
+}
+.btnNext::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+  transition: 1s;
+  top: 0;
+  border-radius: 0 0 90% 90%;
+}
+.btnNext:hover::before {
+  height: 180%;
+}
+
 
 video{
   width: 100.001%;

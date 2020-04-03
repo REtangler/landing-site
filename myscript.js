@@ -4,7 +4,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 970 || document.documentElement.scrollTop > 970) {
         document.getElementById("btnUp").style.display = "block";
        
     }
