@@ -4,12 +4,10 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 970 || document.documentElement.scrollTop > 970) {
+    document.getElementById("btnUp").style.display = "none";
+    if (document.body.scrollTop > 970 || document.documentElement.scrollTop > 970 ) {
         document.getElementById("btnUp").style.display = "block";
        
-    }
-    else {
-        document.getElementById("btnUp").style.display = "none";
     }
 }
 // When the user clicks on the button, scroll to the top of the document
