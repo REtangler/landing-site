@@ -42,10 +42,18 @@
     <section class="sec1">
         <img class="logo-big" src="Gallery/logo.png" alt="Logo">
         <h1>Winter Wonderland</h1>
-        <video loop muted autoplay>
+        <video loop muted preload="auto" class="bgblur" id="title-blur-video">
             <source src="Gallery/Mountain Loop HD.mp4" type="video/mp4" poster="Gallery/57-572052_2560x1440-nature-snowy-mountains-wallpaper-data-snowy-mountain.jpg">  <!-- добавити постер першого кадру відоса -->
             Your browser does not support this video.
         </video>
+        <video loop muted preload="auto" id="title-video">
+            <source src="Gallery/Mountain Loop HD.mp4" type="video/mp4" poster="Gallery/57-572052_2560x1440-nature-snowy-mountains-wallpaper-data-snowy-mountain.jpg">  <!-- добавити постер першого кадру відоса -->
+            Your browser does not support this video.
+        </video>
+        <script>
+            syncplay();
+        </script>
+    
         <p class="container col_l t-f"> Your last resort will be the last memory to stick in your brain!</p>
          <button class="btnNext" onclick="scroll_sec1()">&#9661;</button>         <!--   &#9586;&#9585;     -->
         <p class="container col_r t-f">Our resort will definitely be carved in there for good!</p>
