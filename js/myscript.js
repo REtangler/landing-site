@@ -1,16 +1,20 @@
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
-    scrollFunction()
+    var st = 0;
+    if ($('.sec2').visible( true ))
+    {
+        st++;
+    }
+    if(st>0)
+    {
+        document.getElementById("btnUp").style.display = "block";
+        onclick( st = 0);
+    }
+    if($('.sec1').visible( true ))
+    {
+        document.getElementById("btnUp").style.display = "none";
+    }
 };
 
-function scrollFunction() {
-    document.getElementById("btnUp").style.display = "none";
-    if (document.body.scrollTop > 970 || document.documentElement.scrollTop > 970 ) {
-        document.getElementById("btnUp").style.display = "block";
-       
-    }
-}
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
@@ -30,11 +34,7 @@ function scroll_sec1() {
     // window.scrollTo(0,document.getElementById("sec1"));
 }
 
-// function syncplay() {
-//     var video = document.getElementById("title-video")
-//     video.oncanplay = document.getElementById("title-blur-video").onplay();
-// }
-function syncplay() {   //якшо передній відос повністю займає екран, задній не запускати
+function syncplay() {   //якшо передній відос повністю займає екран, задній не запускати(зробити)
     var video = document.getElementById("title-video");
     // var video_blur = document.getElementById("title-blur-video");
     video.addEventListener("canplay", function() {
