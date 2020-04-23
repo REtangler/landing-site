@@ -1,18 +1,16 @@
 window.onscroll = function () {
     var st = 0;
     if ($('.sec2').visible( true ))
-    {
         st++;
-    }
+
     if(st>0)
     {
-        document.getElementById("btnUp").style.display = "block";
+        $(".btnUp").css("display", "block");
         onclick( st = 0);
     }
+
     if($('.sec1').visible( true ))
-    {
-        document.getElementById("btnUp").style.display = "none";
-    }
+       $(".btnUp").css("display", "none");
 };
 
 function topFunction() {
@@ -29,19 +27,14 @@ function topFunction() {
 // }
 
 function scroll_sec1() {
-    var el = document.getElementById("sec1");
-    el.scrollIntoView({behavior: "smooth"});
-    // window.scrollTo(0,document.getElementById("sec1"));
+    $("#sec1")[0].scrollIntoView({behavior: "smooth"});
 }
 
-function syncplay() {   //якшо передній відос повністю займає екран, задній не запускати(зробити)
-    var video = document.getElementById("title-video");
-    // var video_blur = document.getElementById("title-blur-video");
-    video.addEventListener("canplay", function() {
+function syncplay() { //make 2 ifs for 2 vids
+    $("#title-video")[0].addEventListener("canplay", function() {
       setTimeout(function() {
-        video.play();
-        video = document.getElementById("title-blur-video");
-        video.play();
+        $("#title-video")[0].play();
+        $("#title-blur-video")[0].play();
       }, 100);
     }); 
 }
