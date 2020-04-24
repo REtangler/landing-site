@@ -378,7 +378,7 @@ tr:hover {
 
   #title-video {
     padding-top: 0px;
-    position: absolute;
+    position: fixed;
     width: auto;
     height: 100%;
     z-index: -10;
