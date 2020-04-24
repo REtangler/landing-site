@@ -97,3 +97,19 @@
       background: url(../Gallery/b6.jpg);
       background-size: cover;
     }
+
+
+    @media (max-width:768px) {
+      .sec2 ul {
+        width: 27em;
+        height: 12em;
+        }
+        .sec2 ul li {
+          width: 8em;
+          height: 8em;
+          }
+          .sec2-box6 {
+            top: -70%;
+            left: 50%;
+          }
+    }

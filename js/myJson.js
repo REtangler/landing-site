@@ -13,12 +13,12 @@ request.onload = function() {
 function show(jsonObj) {
   const resort1 = jsonObj['data'];
   var row_data = '';
-  for (let i = 0; i < resort1.length; i -=- 1) {
+  for (let i = 0; i < resort1.length; i++) {
     var row_data = row_data + '<tr>' +
       ' <td>' + resort1[i].Name + '</td>' +
       ' <td>' + resort1[i].Price_per_day + '</td>' +
       ' <td>' + resort1[i].Address + '</td>' +
-      ' <td>' + resort1[i].Web-Site + '</td>' +
+      ' <td>' + resort1[i].Web_Site + '</td>' +
       '</tr>';
   }
   let table_body_element = document.createElement('tbody');
