@@ -365,7 +365,7 @@ tr:hover {
   color: rgb(255, 255, 255);
 }
 
-@media (max-width:1080px) {
+@media (max-width:1081px) {
 
   .btnNext {
     display: none;
