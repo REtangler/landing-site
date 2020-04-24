@@ -1,7 +1,7 @@
 @import "gallery-diamonds.css";
 
 html {
-  overflow-x: hidden;
+  overflow-x: hidden!important;
 }
 
 h1 {
@@ -366,7 +366,9 @@ tr:hover {
 }
 
 @media (max-width:1081px) {
-
+  html {
+    overflow-x: hidden!important;
+  }
   .btnNext {
     display: none;
   }
