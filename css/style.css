@@ -299,7 +299,7 @@ footer {
 .btnNext {
   position: absolute;
   top: 75%;
-  font-size: 3em;
+  font-size: 50px;
   left: 50%;
   transform: translateX(-50%);
   border: 2px solid rgb(0, 0, 0);
