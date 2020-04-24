@@ -5,32 +5,21 @@
     transform: translate(-50%, 0%);
     margin: 0;
     padding: 0;
-    /* width: 600px; */
-    /* height: 150px; */
-    /* width: 37.5em; */
-    /* height: 9.375em; */
     width: 32vw;
     height: 8vw;
     }
     .sec2 ul li {
     list-style: none;
     position: absolute;
-    /* width: 200px; */
-    /* height: 200px; */
-    /* width: 12.5em; */
-    /* height: 12.5em; */
     width: 10vw;
     height: 10vw;
     background: none;
     transform: rotate(45deg);
     transition: 0.3s;
-    /* margin: -100px; */
     margin: -4.7vw;
     overflow: hidden;
-    /* filter: brightness(50%) grayscale(80%); */
     }
     .sec2 ul li:hover {
-      /* filter: brightness(100%) grayscale(0%); */
       transform: rotate(45deg) scale(1.05);
     }
     

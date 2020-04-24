@@ -18,7 +18,7 @@ function show(jsonObj) {
       ' <td>' + resort1[i].Name + '</td>' +
       ' <td>' + resort1[i].Price_per_day + '</td>' +
       ' <td>' + resort1[i].Address + '</td>' +
-      ' <td>' + resort1[i].Web_Site + '</td>' +
+      ' <td><a href="https://' + resort1[i].Web_Site + '">' + resort1[i].Web_Site + '</a></td>' +
       '</tr>';
   }
   let table_body_element = document.createElement('tbody');
