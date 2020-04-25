@@ -409,6 +409,11 @@ tr:hover {
     height: auto;
   }
 
+  .logo {
+    transform: scale(0.18);
+    margin-left: -335px;
+    margin-top: -222px;
+  }
 
   table {
     width: 98%;
