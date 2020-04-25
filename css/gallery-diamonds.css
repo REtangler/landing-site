@@ -88,17 +88,17 @@
     }
 
 
-    @media (max-width:768px) {
+    @media (max-width:1081px) {
       .sec2 ul {
-        width: 27em;
-        height: 12em;
+        width: 400px;
+        height: 130px;
         }
         .sec2 ul li {
-          width: 8em;
-          height: 8em;
+          width: 130px;
+          height: 130px;
           }
           .sec2-box6 {
-            top: -70%;
+            top: -80%;
             left: 50%;
           }
     }

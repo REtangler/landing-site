@@ -386,4 +386,26 @@ tr:hover {
     top: 50%;
     transform: translate(-50%, -50%);
   }
+
+  .topnavbar a {
+    font-size: 50px;
+    padding: 8px 16px;
+  }
+
+  .t-f {
+    font-size: 40px;
+    width: 55%;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 70px;
+    padding-top: 230px;
+  }
+
+  .logo-big {
+    margin-top: 30px;
+    width: 450px;
+    height: auto;
+  }
 }
