@@ -408,4 +408,28 @@ tr:hover {
     width: 450px;
     height: auto;
   }
+
+
+  table {
+    width: 98%;
+    margin-left: 1%;
+    top: 60px;
+  }
+  
+  th {
+    font-size: 24px;
+    border-width: 1px;
+    padding: 8px;
+  }
+  
+  td {
+    font-size: 20px;
+    border-width: 1px;
+    padding: 8px;
+  }
+
+  .foot {
+    font-size: 24px;
+    transform: translateY(-15px);
+  }
 }
